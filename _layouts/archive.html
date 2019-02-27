@@ -1,0 +1,27 @@
+---
+layout: default
+title: Archive
+---
+
+<!-- Begin List Posts
+================================================== -->
+<div class="container mx-4">
+
+<section class="row recent-posts">
+    <div class="col-12">
+        <div class="section-title">
+            <h2><span>{{ page.type }} '{{ page.title }}'</span></h2>
+        </div>
+        <div class="masonrygrid row listrecent">
+
+            {% for post in page.posts %}
+
+            {% include postbox.html %}
+
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+</div>

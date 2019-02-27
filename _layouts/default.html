@@ -1,58 +1,159 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+<link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<title>{{ page.title }} | {{site.name}}</title>
 {% seo %}
-  </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/ntxdroid.css" rel="stylesheet">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-            <a id="forkme_banner" href="https://github.com/">Hosted on GitHub</a>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
 
-          <h1 id="project_title">{{ site.title }}</h1>
-          <h2 id="project_tagline">{{ site.description }}</h2>
 
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
-        </header>
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-expand-md navbar-light bg-white fixed-top mediumnavigation border-bottom">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container">
+
+    <!-- Begin Logo -->
+    <div class="d-none d-md-block d-lg-block d-xl-block">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+      </a>
+    </div>
+      <!-- End Logo -->
+
+    <!-- Begin Menu -->
+    <div class="collapse navbar-collapse" id="navbarsWow">
+
+      <!-- Begin Menu -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              {% assign categories_list = site.categories %}
+              {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+              <a class="dropdown-item" href="{{site.baseurl}}{% if beta %}/site-preview{% endif %}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+              {% endfor %}
+              {% else %}
+              {% for category in categories_list %}
+              <a class="dropdown-item" href="{{site.baseurl}}/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+              {% endif %}
+              {% assign categories_list = nil %}
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a target="_blank" class="nav-link" href="https://git.io/fhbrn">
+            <i class="d-none d-md-block d-lg-block d-xl-block fab fa-github"></i>
+             <span class="d-sm d-md-none d-lg-none d-xl-none">
+               GitHub
+             </span>
+         </a>
+       </li>
+
+      </ul>
+      <!-- End Menu -->
+
+    </div>
+  </div>
+</header>
+
+<!-- End Menu Navigation
+================================================== -->
+
+<div class="site-content">
+
+  <div class="container">
+
+    <!-- Site Title
+    ================================================== -->
+
+    <div class="mainheading">
+      <h1 class="sitetitle">{{ site.name }}
+        {% if site.beta %}<span class="beta"> Beta</span>{% endif %}
+      </h1>
+
+      <p class="lead">
+           {{ site.description }}
+      </p>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+
+      <!-- Content
+      ================================================== -->
+    <div class="main-content">
         {{ content }}
-      </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  </div><!-- /.container -->
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
+  <!-- Begin Footer
+  ================================================== -->
+  <footer class="footer">
+
+      <div class="container">
+
+          <div class="copyright">
+              <p class="float-left">
+              Copyright © {{ site.time | date: "%Y" }} {{ site.name }}.
+              </p>
+              <p class="float-right">
+              <!-- Licensed under MIT by WowThemes.net -->
+              Hosted on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+              </p>
+              <div class="clearfix"></div>
+          </div>
+
+      </div>
+
+  </footer>
+  <!-- End Footer
+  ================================================== -->
+
+</div>
+<!-- End Site Content
+================================================== -->
+
+<!-- JavaScript
+================================================== -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
+
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+
+</body>
 </html>
