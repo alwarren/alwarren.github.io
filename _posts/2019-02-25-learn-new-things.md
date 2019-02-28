@@ -7,6 +7,7 @@ image: assets/images/learning-for-life.jpg
 featured: true
 hidden: true
 categories: [Life]
+description: "Approach life with a sense of wonder and discovery. Evolve your mind. Let it grow. Keep learning. And you will never grow old."
 ---
 > "_I'm not afraid of storms, for I'm learning how to sail my ship._" - Louisa May Alcott  
 
