@@ -7,7 +7,7 @@ meta_description: "Android development, Kotlin, Deep Thoughts, and Musings"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 12
-baseurl: 'http://ntxdroid.com'
+baseurl: ''
 email: 'ntxdroid@gmail.com'
 google_analytics: ''
 disqus: 'ntxdroid'
