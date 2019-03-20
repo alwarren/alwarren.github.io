@@ -4,7 +4,7 @@ title: "Why Use Two IDEs?"
 author: al
 categories: [ Android Studio ]
 image: assets/images/choices.jpg
-featured: true
+featured: false
 permalink: why-use-two-ides
 ---
 [Android Studio](https://developer.android.com/studio/) is a great IDE. And so is [IntelliJ](https://www.jetbrains.com/idea/). But why use IntelliJ for developing [Android Apps](https://www.android.com/) if we can't do any Android related things? And, that, my friend, is exactly why I use both. Let me explain.
