@@ -16,6 +16,13 @@ post_class: post-template
 		<div class="col-sm-10">
 			<div class="mainheading">
 
+        <!-- Alt Image -->
+        {% if page.alt-image %}
+            <img class="mx-auto d-block"
+              src="{{ site.baseurl }}/{{ page.alt-image }}" alt="{{ page.title }}" /><p/>
+        {% endif %}
+        <!-- End Alt Image -->
+
                 <!-- Post Categories -->
                 <div class="after-post-tags pt-0 mb-0">
                     <ul class="tags">
@@ -28,6 +35,8 @@ post_class: post-template
                     </ul>
                 </div>
                 <!-- End Categories -->
+
+
 
                 <!-- Post Title -->
 				<h2 class="post-title">{{ page.title }}</h2>

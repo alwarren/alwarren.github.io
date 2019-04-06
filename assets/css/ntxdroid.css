@@ -80,3 +80,7 @@ ul.tags li a:hover {
   background: #d3d3d3;
   text-decoration: none;
 }
+
+.article-post img {
+    box-shadow:none;
+}
