@@ -109,7 +109,7 @@ class MyClass(name: String) {
 ```
 @Test
 fun `object created with argument`() {
-    MyClass("")
+    MyClass("") // shows an error in the IDE
 }
 ```
 
