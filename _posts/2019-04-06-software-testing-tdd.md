@@ -143,6 +143,11 @@ fun `object has a member`() {
 2. Run all tests.
 
 ```
+@Test
+fun `object has a member`() {
+    val member: String = MyClass().member // shows as valid in the IDE
+}
+
 class MyClass(name: String) {
     constructor() : this("")
 
@@ -152,7 +157,7 @@ class MyClass(name: String) {
 
 **Here's the completed code:**
 
-```
+```text
 package com.my.project
 
 import org.junit.Test
