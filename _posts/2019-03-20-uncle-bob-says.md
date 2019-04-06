@@ -22,3 +22,7 @@ description: "Software development quotes by Robert C Martin aka Uncle Bob"
 > "_One of the dangers of TDD is that it vastly increases confidence. Over-confidence can lead to insufficient refactoring and attention to principles and patterns. You confidently make a mess._" - Uncle Bob 22 Jan 2019
 
 > "_Functional, OO, and Structured are not mutually exclusive.  It’s not one or the other.  They are complimentary and compatible.  You can do them all at the same time._" - Uncle Bob 11 Jan 2019
+
+**References**
+
+[The Clean Code Blog by Robert C. Martin (Uncle Bob)](https://blog.cleancoder.com/)
