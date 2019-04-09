@@ -4,8 +4,8 @@ title: "Learn New Things"
 author: al
 permalink: learn-new-things
 image: assets/images/learning-for-life.jpg
-featured: false
-hidden: false
+featured: true
+hidden: true
 categories: [Life]
 description: "Approach life with a sense of wonder and discovery. Evolve your mind. Let it grow. Keep learning. And you will never grow old."
 ---
