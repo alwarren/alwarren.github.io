@@ -29,7 +29,7 @@ No, I wanted to know down to the most minute detail how everything about that mo
 
 Day by day. Bit by bit. That old broken lawnmower became a scattered pile of metal. One last thing. The biggest challenge. The crankcase. With no idea of what it was, or what it did, or what was inside, it had to come apart. Who knows what mysteries might lie inside. But I had a hunch that the thing made that blade spin. Wrench in hand, the final bolts come out. And the thing doesn't fall apart.
 
-Upon closer inspection, a small discreet crack appeared circumnavigating that big hunk of steel. Aha, it does come apart! My heart was filled with excitement. Another challenge. Hammer and screwdriver in hand, I set out with near surgical precision to relieve that hunk of metal of it's inner mysteries. It split in two. Oil spilling onto the sidewalk. A growing puddle of black stinky liquid ever growing. It was a huge mess. I was terrified. Now what shall I do. What will Dad say about the huge mess I've just made.
+Upon closer inspection, a small discrete crack appeared circumnavigating that big hunk of steel. Aha, it does come apart! My heart was filled with excitement. Another challenge. Hammer and screwdriver in hand, I set out with near surgical precision to relieve that hunk of metal of it's inner mysteries. It split in two. Oil spilling onto the sidewalk. A growing puddle of black stinky liquid ever growing. It was a huge mess. I was terrified. Now what shall I do. What will Dad say about the huge mess I've just made.
 
 Sometimes life throws you a curveball.
 
