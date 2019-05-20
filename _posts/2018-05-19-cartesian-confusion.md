@@ -17,8 +17,8 @@ Here's a simple example.
 Consider the following values:
 
 ```
-8  0  3
-4  1  2
+8  1  3
+4  0  2
 7  6  5
 ```
 1. Store the values in a two-dimensional array of int.
