@@ -34,6 +34,6 @@ Seems simple enough, right? Well, things are not always as they seem. Things wer
 
 As it turns out, there is an important distinction between thinking in Cartesian space and working with two-dimensional arrays. That may be old news to you. But either I never knew that or had totally forgotten about it. And then I stumbled upon a link that explained things. It would have been nice to have known that before spending so much time hacking at the code just to "get it right". It's nice to make things work. But not so nice when you don't understand why the very code you wrote actually works.
 
-But in the end, sometimes you just have to look at things differently.
+In the end, sometimes you just have to look at things differently.
 
 > Approach life with a sense of wonder and discovery. Evolve your mind. Let it grow. Keep learning. And you will never grow old.
