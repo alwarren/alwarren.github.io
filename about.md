@@ -15,7 +15,7 @@ Sit back and enjoy a few random thoughts and musings from an old guy with a comp
 
 Just some old guy with a computer that says he's paid his dues in I.T. Claims he did a lot of COBOL back in the day. Whatever that means. Now days, he does this stuff as a hobby to keep his mind sharp.
 
-He's a pretty nice guy that really enjoys not only learning but sharing what he learns with others.
+He's a pretty nice guy that really enjoys learning and sharing what he learns with others.
 <br/>{: .text-justify}
 
 <div class="section-title">
