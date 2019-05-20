@@ -6,8 +6,8 @@ categories: [ Developer ]
 permalink: tdd-experiment
 image: assets/images/software-testing.png
 alt-image: assets/images/testing-pyramid.png
-featured: true
-hidden: true
+featured: false
+hidden: false
 description: "Make it work. Make it right. Make it fast."
 ---
 
