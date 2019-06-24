@@ -26,7 +26,7 @@ And then note this key phrase:
 
 > "It's easier and more efficient to separate out view <u>data ownership</u> from <u>UI controller logic</u>."
 
-And so, it seams, they key takeaway is that the ViewModel was never intended as a controller, presenter, or anything else beyond just a data object. Of course, objects can have methods but really all a ViewModel needs is some basic instructions for loading the data. In other words, it tells the view, "tell me what to store and I'll store if for you and take care of device rotation."
+And so, it seems, they key takeaway is that the ViewModel was never intended as a controller, presenter, or anything else beyond just a data object. Of course, objects can have methods but really all a ViewModel needs is some basic instructions for loading the data. In other words, it tells the view, "tell me what to store and I'll store if for you and take care of device rotation."
 
 The magic of ViewModel really shines when you use it with LiveData. Now you have something you can observe for changes. And when that happens, you can just send things off to the affected views. Of course, if you have a really complex view system, you can always do the heavy lifting with a presenter.
 
