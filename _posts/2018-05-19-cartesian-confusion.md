@@ -6,8 +6,8 @@ categories: [ Developer ]
 permalink: cartesian-confusion
 image: assets/images/cartesian.png
 alt-image: assets/images/cartesian-triangle.png
-featured: true
-hidden: true
+featured: false
+hidden: false
 description: "Think differently. Think Cartesian"
 ---
 I was working on a fun Java project the other day. Part of the project involved moving values in a two-dimensional array. The code for that seemed pretty straight forward. But I kept getting the wrong result. I finally got it to work but when I looked at the code, it made absolutely no sense.
