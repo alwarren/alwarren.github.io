@@ -72,8 +72,8 @@ class CurrentWeatherMockTest : UnitTest() {
         @Order(1)
         fun `coord values are correct`() {
             print(Values.testTitle("coord values are correct"))
-            actual.coord?.lon shouldEqual -97.8
-            actual.coord?.lat shouldEqual 32.76
+            actual.coord?.lon shouldEqual -96.8
+            actual.coord?.lat shouldEqual 32.78
             showPassed()
         }
 
@@ -151,8 +151,8 @@ class CurrentWeatherMockTest : UnitTest() {
             actual.visibility shouldEqual 16093
             actual.dt shouldEqual 1573647508
             actual.timezone shouldEqual -21600
-            actual.id shouldEqual 4740364
-            actual.name shouldEqual "Weatherford"
+            actual.id shouldEqual 4684888
+            actual.name shouldEqual "Dallas"
             actual.cod shouldEqual 200
 
             showPassed()
