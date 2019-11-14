@@ -5,8 +5,8 @@ author: al
 categories: [ Android, Developer ]
 image: assets/images/android-binary.png
 permalink: mvp-mvvm-conundrum
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 So here's something I think about frequently. We hear so much about clean this clean that. Where does this go. Where does that go. Here's the thing. If it formats what the user sees, hears, or touches, it's the UI layer which is the outermost layer in clean architecture. If it alters data it's in the adapter layer which is the next level down.
 
