@@ -23,5 +23,5 @@ _"Now there is in store for me the crown of righteousness, which the Lord, the r
   <h4>In Memorium</h4>
   <h2>Mom</h2>
   <p><img src="/assets/images/mom.jpg"/></p>
-  <h4>1938-2020</h4>
+  <h4>1932-2020</h4>
 </div>
